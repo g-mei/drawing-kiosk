@@ -1,0 +1,57 @@
+<!doctype html>
+
+<head>
+    <title>Georges Seurat Drawing Kiosk</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="app">
+        <div id="back" class="toolbar">
+            <a href="homepage.html"><img src="images/back.png"></a>
+        </div>
+        
+        <div id="colors" class="toolbar">
+            <img src="images/blue.png" data-color="#6bcbe4" data-colormode="single" class="active"/>
+            <img src="images/green.png" data-color="#8bc573" data-colormode="single"/>
+            <img src="images/yellow.png" data-color="#e5dd93" data-colormode="single"/>
+            <img src="images/red.png" data-color="#d9754f" data-colormode="single"/>
+            <img src="images/white.png" data-color="#ffffff" data-colormode="single"/>
+        </div>
+
+        <div id="double-colors" class="toolbar">
+            <img src="images/d-blueyellow.png" data-color="#6bcbe4" data-color2="#e5dd93" data-colormode="double"/>
+            <img src="images/d-greenred.png" data-color="#8bc573" data-color2="#d9754f" data-colormode="double"/>
+            <img src="images/d-yellowgreen.png" data-color="#e5dd93" data-color2="#8bc573" data-colormode="double"/>
+            <img src="images/d-redwhite.png" data-color="#d9754f" data-color2="#ffffff" data-colormode="double"/>
+            <img src="images/d-whiteblue.png" data-color="#ffffff" data-color2="#6bcbe4" data-colormode="double"/>
+        </div>
+        
+        <canvas id="canvas" width="700" height="500"></canvas>
+        
+        <div id="brush-size" class="toolbar">
+            <img src="images/size-small.png" data-mode="draw" data-size="20" class="active"/>
+            <img src="images/size-med.png" data-mode="draw" data-size="30"/>
+            <img src="images/size-large.png" data-mode="draw" data-size="50"/>
+        </div>
+        
+        <div id="brush-shape" class="toolbar">
+            <img src="images/shape-circle.png" data-shape="circle" class="active"/>
+            <img src="images/shape-square.png" data-shape="square"/>
+            <img src="images/shape-triangle.png" data-shape="triangle"/>
+        </div>
+        
+        <div id="undoredo" class="toolbar">
+            <img src="images/undo.png" data-action="undo" class="disabled"/>
+            <img src="images/redo.png" data-action="redo" class="disabled"/>
+        </div>
+        
+        <div id="clear" class="toolbar">
+            <img src="images/clear.png" data-action="clear"/>
+        </div>
+        
+    </div>
+    
+    <script type="text/javascript" src="script.js"></script>
+    
+</body>
